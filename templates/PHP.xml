@@ -1,0 +1,47 @@
+<templateSet group="PHP">
+  <template name="bt" value="@$TAG$ ($CONDITIONS$)&#10;    $SELECTION$ &#10;@end$TAG$" description="Blade Tag" toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+  <template name="pivottable" value="$table-&gt;primary(['$END$$id1$', '$id2$']);&#10;$table-&gt;foreignId('$id1$')-&gt;constrained('$table$')-&gt;onDelete('cascade');;&#10;$table-&gt;foreignId('$id2$')-&gt;constrained('$table$')-&gt;onDelete('cascade');;&#10;$table-&gt;timestamps();" description="Create a pivot table from existing tables" toReformat="false" toShortenFQNames="true">
+    <variable name="id1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bfrm" value="&lt;form method=&quot;POST$METHOD$&quot; action=&quot;/$ACTION$&quot;&gt;&#10;    @csrf&#10;    &#10;    $END$&#10;&lt;/form&gt;" description="Form with csrf" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="REQUEST" value="true" />
+    </context>
+  </template>
+  <template name="bforminput" value="&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$VARIABLE$&quot;&gt;&#10;        $VARIABLE$&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;text&quot;&#10;        name=&quot;$VARIABLE$&quot;&#10;        id=&quot;$VARIABLE$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$VARIABLE$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Input for Form" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="REQUEST" value="true" />
+    </context>
+  </template>
+  <template name="dump" value="echo '&lt;pre&gt;';&#10;var_dump($VARIABLE$);&#10;echo '&lt;/pre&gt;';&#10;exit;" description="Show in Array format" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vecho" value="echo &quot;$END$&quot;;&#10;exit();" description="Echo with exit" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
