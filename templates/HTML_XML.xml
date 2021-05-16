@@ -4,19 +4,29 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="forminput" value="&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$VARIABLE$&quot;&gt;&#10;        $VARIABLE$&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;text&quot;&#10;        name=&quot;$VARIABLE$&quot;&#10;        id=&quot;$VARIABLE$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$VARIABLE$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Input for Form" toReformat="false" toShortenFQNames="true">
-    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="forminput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;text&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Input for Form" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="formpassword" value="&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$VARIABLE$&quot;&gt;&#10;        $VARIABLE$&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;password&quot;&#10;        name=&quot;$VARIABLE$&quot;&#10;        id=&quot;$VARIABLE$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$VARIABLE$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Password for Form" toReformat="false" toShortenFQNames="true">
-    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="formpassword" value="&lt;!-- $VALUE$ From Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;password&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Password for Form" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
   <template name="&lt;?" value="&lt;?php $END$ ?&gt;" description="PHP tag for HTML" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bt" value="@$TAG$ ($CONDITIONS$)&#10;    $SELECTION$ &#10;@end$TAG$" description="Blade Tag" toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITIONS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
