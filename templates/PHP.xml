@@ -1,12 +1,4 @@
 <templateSet group="PHP">
-  <template name="bt" value="@$TAG$ ($CONDITIONS$)&#10;    $SELECTION$ &#10;@end$TAG$" description="Blade Tag" toReformat="false" toShortenFQNames="true">
-    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="CONDITIONS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-      <option name="Vue" value="true" />
-    </context>
-  </template>
   <template name="pivottable" value="$table-&gt;primary(['$END$$id1$', '$id2$']);&#10;$table-&gt;foreignId('$id1$')-&gt;constrained('$table$')-&gt;onDelete('cascade');;&#10;$table-&gt;foreignId('$id2$')-&gt;constrained('$table$')-&gt;onDelete('cascade');;&#10;$table-&gt;timestamps();" description="Create a pivot table from existing tables" toReformat="false" toShortenFQNames="true">
     <variable name="id1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="id2" expression="" defaultValue="" alwaysStopAt="true" />
