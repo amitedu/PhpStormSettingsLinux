@@ -7,7 +7,7 @@
   <template name="twInput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full @error('name') border-red-500 @enderror&quot;&#10;        type=&quot;$TYPE$&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" description="Input for Form" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
-    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -55,7 +55,15 @@
   <template name="bsInput" value="&lt;!-- $VALUES$ Form Input --&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;form-label&quot;&gt;$VALUES$&lt;/label&gt;&#10;    &lt;input class=&quot;form-control @error('$NAME$') is-invalid @enderror&quot; aria-describedby=&quot;emailHelp&quot; &#10;        name=&quot;$NAME$&quot; &#10;        id=&quot;$NAME$&quot;&#10;        type=&quot;$TYPE$&quot; &#10;    &gt;&#10;    @error('$NAME$')&#10;        &lt;span class=&quot;invalid-feedback&quot; role=&quot;alert&quot;&gt;&#10;            {{ $message }}&#10;        &lt;/span&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUES" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
-    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="text" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bsBtn" value="&#10;&lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;$END$" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="submit" alwaysStopAt="true" />
+    <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
