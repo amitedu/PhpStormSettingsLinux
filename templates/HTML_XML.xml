@@ -4,7 +4,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="forminput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;text&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Input for Form" toReformat="false" toShortenFQNames="true">
+  <template name="twInput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full&quot;&#10;        type=&quot;text&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;" description="Input for Form" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -49,6 +49,12 @@
       <option name="PHP Statement" value="true" />
       <option name="PHP String Literal" value="true" />
       <option name="PHP Trait Member" value="true" />
+    </context>
+  </template>
+  <template name="bsFrm" value="&lt;form&gt;&#10;  &lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;&#10;    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot;&gt;&#10;    &lt;div id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;We'll never share your email with anyone else.&lt;/div&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;exampleInputPassword1&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;mb-3 form-check&quot;&gt;&#10;    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;exampleCheck1&quot;&gt;&#10;    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleCheck1&quot;&gt;Check me out&lt;/label&gt;&#10;  &lt;/div&gt;&#10;  &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;&#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
