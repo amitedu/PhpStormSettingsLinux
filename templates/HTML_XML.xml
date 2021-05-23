@@ -1,13 +1,17 @@
 <templateSet group="HTML/XML">
-  <template name="formsubmit" value="&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;button class=&quot;bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500&quot;&#10;            type=&quot;submit&quot;&#10;    &gt;&#10;        Submit&#10;    &lt;/button&gt;&#10;&lt;/div&gt;" description="Form Submit button" toReformat="false" toShortenFQNames="true">
+  <template name="twFrm" value="&lt;form action=&quot;$ACTION$&quot; method=&quot;$METHOD$&quot;&gt;&#10;@csrf&#10;    &#10;    $END$&#10;    &#10;    &lt;button class=&quot;bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500&quot;&#10;            type=&quot;$TYPE$&quot;&#10;    &gt;&#10;        $NAME$&#10;    &lt;/button&gt;&#10;&lt;/form&gt;" description="Tailwind Submit Form with button" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;post&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="&quot;submit&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="twInput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full @error('name') border-red-500 @enderror&quot;&#10;        type=&quot;$TYPE$&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" description="Input for Form" toReformat="false" toShortenFQNames="true">
+  <template name="twInput" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;mb-6&quot;&gt;&#10;    &lt;label class=&quot;block mb-2 uppercase font-bold text-xs text-gray-700&quot;&#10;        for=&quot;$NAME$&quot;&gt;&#10;        $VALUE$:&#10;    &lt;/label&gt;&#10;&#10;    &lt;input class=&quot;border border-gray-400 p-2 w-full @error('name') border-red-500 @enderror&quot;&#10;        type=&quot;$TYPE$&quot;&#10;        name=&quot;$NAME$&quot;&#10;        id=&quot;$NAME$&quot;&#10;        required&#10;    &gt;&#10;&#10;    @error('$NAME$')&#10;        &lt;p class=&quot;text-red-500 text-xs mt-2&quot;&gt;{{ $message }}&lt;/p&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" description="Input for Form" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
-    <variable name="TYPE" expression="" defaultValue="text" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(underscoresToSpaces(NAME))" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -19,7 +23,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="&lt;?" value="&lt;?php $END$ ?&gt;" description="PHP tag for HTML" toReformat="false" toShortenFQNames="true">
+  <template name="&lt;?p" value="&lt;?php $END$ ?&gt;" description="PHP tag for HTML" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
@@ -52,17 +56,27 @@
       <option name="PHP Trait Member" value="true" />
     </context>
   </template>
-  <template name="bsInput" value="&lt;!-- $VALUES$ Form Input --&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;form-label&quot;&gt;$VALUES$&lt;/label&gt;&#10;    &lt;input class=&quot;form-control @error('$NAME$') is-invalid @enderror&quot; aria-describedby=&quot;emailHelp&quot; &#10;        name=&quot;$NAME$&quot; &#10;        id=&quot;$NAME$&quot;&#10;        type=&quot;$TYPE$&quot; &#10;    &gt;&#10;    @error('$NAME$')&#10;        &lt;span class=&quot;invalid-feedback&quot; role=&quot;alert&quot;&gt;&#10;            {{ $message }}&#10;        &lt;/span&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="bsInput" value="&lt;!-- $VALUES$ Form Input --&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;form-label&quot;&gt;$VALUES$&lt;/label&gt;&#10;    &lt;input class=&quot;form-control @error('$NAME$') is-invalid @enderror&quot; aria-describedby=&quot;emailHelp&quot;&#10;        name=&quot;$NAME$&quot; &#10;        id=&quot;$NAME$&quot;&#10;        type=&quot;$TYPE$&quot; &#10;        required&#10;    &gt;&#10;    @error('$NAME$')&#10;        &lt;span class=&quot;invalid-feedback&quot; role=&quot;alert&quot;&gt;&#10;            {{ $message }}&#10;        &lt;/span&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VALUES" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
-    <variable name="TYPE" expression="" defaultValue="text" alwaysStopAt="true" />
+    <variable name="VALUES" expression="capitalize(underscoresToSpaces(NAME))" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="bsBtn" value="&#10;&lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;$END$" toReformat="false" toShortenFQNames="true">
-    <variable name="TYPE" expression="" defaultValue="submit" alwaysStopAt="true" />
+  <template name="bsBtn" value="&#10;&lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;$END$" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="&quot;submit&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bsFrm" value="&lt;form action=&quot;$ACTION$&quot; method=&quot;$POST$&quot;&gt;&#10;@csrf&#10;    &#10;    &lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/form&gt;" description="BootStrap Form skeliton" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="POST" expression="" defaultValue="&quot;post&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="&quot;submit&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
