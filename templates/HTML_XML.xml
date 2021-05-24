@@ -56,7 +56,7 @@
       <option name="PHP Trait Member" value="true" />
     </context>
   </template>
-  <template name="bsInput" value="&lt;!-- $VALUES$ Form Input --&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;form-label&quot;&gt;$VALUES$&lt;/label&gt;&#10;    &lt;input class=&quot;form-control @error('$NAME$') is-invalid @enderror&quot; aria-describedby=&quot;emailHelp&quot;&#10;        name=&quot;$NAME$&quot; &#10;        id=&quot;$NAME$&quot;&#10;        type=&quot;$TYPE$&quot; &#10;        required&#10;    &gt;&#10;    @error('$NAME$')&#10;        &lt;span class=&quot;invalid-feedback&quot; role=&quot;alert&quot;&gt;&#10;            {{ $message }}&#10;        &lt;/span&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="bsInput" value="&lt;!-- $VALUES$ Form Input --&gt;&#10;&lt;div class=&quot;mb-3&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;form-label&quot;&gt;$VALUES$&lt;/label&gt;&#10;    &lt;input class=&quot;form-control @error('$NAME$') is-invalid @enderror&quot; aria-describedby=&quot;emailHelp&quot;&#10;        name=&quot;$NAME$&quot; &#10;        id=&quot;$NAME$&quot;&#10;        type=&quot;$TYPE$&quot; &#10;        required&#10;    &gt;&#10;    @error('$NAME$')&#10;        &lt;span class=&quot;invalid-feedback&quot; role=&quot;alert&quot;&gt;&#10;            {{ $message }}&#10;        &lt;/span&gt;&#10;    @enderror&#10;&lt;/div&gt;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUES" expression="capitalize(underscoresToSpaces(NAME))" defaultValue="" alwaysStopAt="false" />
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -65,7 +65,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="bsBtn" value="&#10;&lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;$END$" toReformat="true" toShortenFQNames="true">
+  <template name="bsBtn" value="&#10;&lt;button type=&quot;$TYPE$&quot; class=&quot;btn btn-primary&quot;&gt;$NAME$&lt;/button&gt;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="TYPE" expression="" defaultValue="&quot;submit&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
