@@ -41,9 +41,6 @@
   </PHPCodeStyleSettings>
   <codeStyleSettings language="HTML">
     <option name="WRAP_ON_TYPING" value="1" />
-    <indentOptions>
-      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
-    </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="PHP">
     <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
