@@ -24,7 +24,10 @@
     </formatting-settings>
   </DBN-SQL>
   <HTMLCodeStyleSettings>
+    <option name="HTML_ALIGN_TEXT" value="true" />
     <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,thead,tbody,tfoot" />
+    <option name="HTML_NEWLINE_BEFORE_FIRST_ATTRIBUTE" value="When multiline" />
+    <option name="HTML_NEWLINE_AFTER_LAST_ATTRIBUTE" value="When multiline" />
   </HTMLCodeStyleSettings>
   <PHPCodeStyleSettings>
     <option name="ALIGN_ASSIGNMENTS" value="true" />
@@ -36,6 +39,12 @@
     <option name="SPACE_BEFORE_UNARY_NOT" value="true" />
     <option name="SPACE_AFTER_UNARY_NOT" value="true" />
   </PHPCodeStyleSettings>
+  <codeStyleSettings language="HTML">
+    <option name="WRAP_ON_TYPING" value="1" />
+    <indentOptions>
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="PHP">
     <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
     <option name="BLANK_LINES_AROUND_METHOD" value="2" />
