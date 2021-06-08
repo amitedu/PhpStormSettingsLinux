@@ -85,4 +85,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="twCenterDiv" value="&lt;div class=&quot;flex h-screen justify-center items-center&quot;&gt;&#10;    &lt;div class=&quot;w-96 border-gray-400 shadow-md p-6 rounded-md&quot;&gt; &lt;!-- THIS DIV WILL BE CENTERED --&gt;&#10;        $END$&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Center div along x and y axis" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
