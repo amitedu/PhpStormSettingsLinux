@@ -1,7 +1,9 @@
 <templateSet group="HTML/XML">
-  <template name="twForm" value="&lt;form action=&quot;$ACTION$&quot; method=&quot;$METHOD$&quot;&gt;&#10;@csrf&#10;    &#10;    $END$&#10;    &#10;    &lt;button class=&quot;bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500&quot;&#10;            type=&quot;$TYPE$&quot;&#10;    &gt;&#10;        $NAME$&#10;    &lt;/button&gt;&#10;&lt;/form&gt;" description="Tailwind Submit Form with button" toReformat="true" toShortenFQNames="true">
+  <template name="twForm" value="&lt;div class=&quot;w-96 border-gray-400 shadow-md p-6 rounded-md&quot;&gt;&#10;    &lt;form action=&quot;$ACTION$&quot; method=&quot;$METHOD$&quot;&gt;&#10;    @csrf&#10;        &#10;        $END$&#10;        &#10;        &lt;div class=&quot;flex justify-between&quot;&gt;&#10;            &lt;a href=&quot;$LINK$&quot;&#10;               class=&quot;bg-gray-400 text-white rounded py-2 px-4 hover:bg-gray-500&quot;&#10;            &gt;$CANCEL$&lt;/a&gt;&#10;            &lt;button class=&quot;bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500&quot;&#10;                    type=&quot;$TYPE$&quot;&#10;            &gt;&#10;                $NAME$&#10;            &lt;/button&gt;&#10;        &lt;/div&gt;&#10;    &lt;/form&gt;&#10;&lt;/div&gt;" description="Tailwind Submit Form with button" toReformat="true" toShortenFQNames="true">
     <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="METHOD" expression="" defaultValue="&quot;post&quot;" alwaysStopAt="true" />
+    <variable name="LINK" expression="" defaultValue="&quot;#&quot;" alwaysStopAt="true" />
+    <variable name="CANCEL" expression="" defaultValue="&quot;Cancel&quot;" alwaysStopAt="true" />
     <variable name="TYPE" expression="" defaultValue="&quot;submit&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="capitalize(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
