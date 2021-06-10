@@ -23,36 +23,12 @@
       <option name="ITERATION_ELEMENTS_WRAPPING" value="chop_down_if_not_single" />
     </formatting-settings>
   </DBN-SQL>
-  <HTMLCodeStyleSettings>
-    <option name="HTML_KEEP_BLANK_LINES" value="1" />
-    <option name="HTML_ALIGN_TEXT" value="true" />
-    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,thead,tbody,tfoot" />
-    <option name="HTML_NEWLINE_BEFORE_FIRST_ATTRIBUTE" value="When multiline" />
-    <option name="HTML_NEWLINE_AFTER_LAST_ATTRIBUTE" value="When multiline" />
-  </HTMLCodeStyleSettings>
   <PHPCodeStyleSettings>
-    <option name="ALIGN_ASSIGNMENTS" value="true" />
-    <option name="LOWER_CASE_BOOLEAN_CONST" value="true" />
-    <option name="LOWER_CASE_NULL_CONST" value="true" />
-    <option name="ELSE_IF_STYLE" value="SEPARATE" />
-    <option name="BLANK_LINES_BEFORE_RETURN_STATEMENT" value="1" />
-    <option name="BLANK_LINES_AFTER_FUNCTION" value="2" />
     <option name="SPACE_BEFORE_UNARY_NOT" value="true" />
     <option name="SPACE_AFTER_UNARY_NOT" value="true" />
+    <option name="SPACE_AROUND_ASSIGNMENT_IN_DECLARE" value="true" />
   </PHPCodeStyleSettings>
-  <codeStyleSettings language="HTML">
-    <option name="WRAP_ON_TYPING" value="1" />
-    <indentOptions>
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
-    </indentOptions>
-  </codeStyleSettings>
   <codeStyleSettings language="PHP">
-    <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
-    <option name="BLANK_LINES_AROUND_METHOD" value="2" />
-    <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
-    <option name="BLANK_LINES_BEFORE_CLASS_END" value="1" />
-    <option name="CLASS_BRACE_STYLE" value="1" />
-    <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
     <option name="SPACE_AFTER_TYPE_CAST" value="true" />
   </codeStyleSettings>
 </code_scheme>
