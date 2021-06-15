@@ -23,7 +23,7 @@
   </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
-    <keyboard-shortcut first-keystroke="alt h" />
+    <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="Editor Delete">
     <keyboard-shortcut first-keystroke="alt semicolon" />
@@ -166,11 +166,11 @@
   </action>
   <action id="MoveStatementDown">
     <keyboard-shortcut first-keystroke="shift ctrl down" />
-    <keyboard-shortcut first-keystroke="shift ctrl alt k" />
+    <keyboard-shortcut first-keystroke="ctrl alt k" />
   </action>
   <action id="MoveStatementUp">
     <keyboard-shortcut first-keystroke="shift ctrl up" />
-    <keyboard-shortcut first-keystroke="shift ctrl alt i" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="NavBar-selectHome">
     <keyboard-shortcut first-keystroke="home" />
