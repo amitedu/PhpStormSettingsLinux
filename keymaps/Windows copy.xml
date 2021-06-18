@@ -23,7 +23,6 @@
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
     <keyboard-shortcut first-keystroke="alt r" />
-    <keyboard-shortcut first-keystroke="alt h" />
   </action>
   <action id="Editor Delete">
     <keyboard-shortcut first-keystroke="alt semicolon" />
