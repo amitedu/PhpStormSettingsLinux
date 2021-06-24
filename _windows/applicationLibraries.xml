@@ -70,6 +70,19 @@
       </CLASSES>
       <SOURCES />
     </library>
+    <library name="jquery.perfect-scrollbar" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery.perfect-scrollbar_1.5.1_css_perfect-scrollbar.css" />
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery.perfect-scrollbar_1.5.1_perfect-scrollbar.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery.perfect-scrollbar_1.5.1_css_perfect-scrollbar.css" />
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery.perfect-scrollbar_1.5.1_perfect-scrollbar.js" />
+      </CLASSES>
+      <SOURCES />
+    </library>
     <library name="tailwindcss" type="javaScript">
       <properties>
         <sourceFilesUrls>
