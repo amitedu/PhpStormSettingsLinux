@@ -83,6 +83,17 @@
       </CLASSES>
       <SOURCES />
     </library>
+    <library name="livewire-sortable" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_gh_livewire_sortable@v0.x.x_dist_livewire-sortable.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_gh_livewire_sortable@v0.x.x_dist_livewire-sortable.js" />
+      </CLASSES>
+      <SOURCES />
+    </library>
     <library name="tailwindcss" type="javaScript">
       <properties>
         <sourceFilesUrls>
