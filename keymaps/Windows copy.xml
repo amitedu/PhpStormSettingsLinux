@@ -53,7 +53,6 @@
   <action id="EditorDeleteToWordEnd">
     <keyboard-shortcut first-keystroke="ctrl delete" />
     <keyboard-shortcut first-keystroke="alt period" />
-    <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorDeleteToWordStart">
     <keyboard-shortcut first-keystroke="ctrl back_space" />
