@@ -40,11 +40,13 @@
     <library name="alpinejs" type="javaScript">
       <properties>
         <sourceFilesUrls>
-          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_alpinejs@3.0.1_dist_module.cjs.js" />
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_alpinejs@3.1.1_dist_cdn.js" />
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_alpinejs@3.2.1_dist_cdn.js" />
         </sourceFilesUrls>
       </properties>
       <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_alpinejs@3.0.1_dist_module.cjs.js" />
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_alpinejs@3.1.1_dist_cdn.js" />
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_alpinejs@3.2.1_dist_cdn.js" />
       </CLASSES>
       <SOURCES />
     </library>
