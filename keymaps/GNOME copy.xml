@@ -228,9 +228,6 @@
   <action id="ProjectViewEditSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
-  <action id="RecentProjectListGroup">
-    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
-  </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl alt comma" />
   </action>
