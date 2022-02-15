@@ -194,7 +194,7 @@
     <keyboard-shortcut first-keystroke="alt x" />
     <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
   </action>
-  <action id="PhpNewFile">
+  <action id="PhpNewClass">
     <keyboard-shortcut first-keystroke="ctrl semicolon" />
   </action>
   <action id="PreviousTab">
