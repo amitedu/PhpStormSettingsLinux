@@ -43,4 +43,5 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="openEdit" value="phpstorm $(git diff --name-only master...&lt;the_branch_name&gt;)" description="Open all edited files to phpstorm" toReformat="false" toShortenFQNames="true" />
 </templateSet>
