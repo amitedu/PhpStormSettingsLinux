@@ -1,5 +1,69 @@
 <application>
   <component name="LightEdit">
+    <option name="sessionFiles">
+      <list>
+        <option value="file:///ActivityController.php" />
+        <option value="file:///ContentUnliked.php" />
+        <option value="file:///DeleteFeaturedContentComment.php" />
+        <option value="file:///FeaturedContentComment.php" />
+        <option value="file:///Discussion.php" />
+        <option value="file:///DeleteDiscussion.php" />
+        <option value="file:///DeleteDiscussionComment.php" />
+        <option value="file:///DeleteDiscussionCommentWithFile.php" />
+        <option value="file:///DiscussionComment.php" />
+        <option value="file:///DiscussionCommentWithFile.php" />
+        <option value="file:///DiscussionLiked.php" />
+        <option value="file:///DiscussionsCreated.php" />
+        <option value="file:///DiscussionsApiController.php" />
+        <option value="file:///DiscussionsController.php" />
+        <option value="file:///DiscussionsListeners.php" />
+        <option value="file:///DiscussionsRepository.php" />
+        <option value="file:///EloquentDiscussions.php" />
+        <option value="file:///activity-points-details.blade.php" />
+        <option value="file:///redeem-points-details.blade.php" />
+        <option value="file:///view-activity-details-page.blade.php" />
+        <option value="file:///add-discussions.blade.php" />
+        <option value="file:///detail-discussions.blade.php" />
+        <option value="file:///edit-discussions.blade.php" />
+        <option value="file:///left-side-discussions.blade.php" />
+        <option value="file:///list-discussions.blade.php" />
+        <option value="file:///AbuseTest.php" />
+        <option value="file:///AddDiscussionTest.php" />
+        <option value="file:///DiscussionCommentTest.php" />
+        <option value="file:///LikeablesTest.php" />
+        <option value="file:///DiscussionTest.php" />
+        <option value="file:///ActivityController.php" />
+        <option value="file:///ContentUnliked.php" />
+        <option value="file:///DeleteFeaturedContentComment.php" />
+        <option value="file:///FeaturedContentComment.php" />
+        <option value="file:///Discussion.php" />
+        <option value="file:///DeleteDiscussion.php" />
+        <option value="file:///DeleteDiscussionComment.php" />
+        <option value="file:///DeleteDiscussionCommentWithFile.php" />
+        <option value="file:///DiscussionComment.php" />
+        <option value="file:///DiscussionCommentWithFile.php" />
+        <option value="file:///DiscussionLiked.php" />
+        <option value="file:///DiscussionsCreated.php" />
+        <option value="file:///DiscussionsApiController.php" />
+        <option value="file:///DiscussionsController.php" />
+        <option value="file:///DiscussionsListeners.php" />
+        <option value="file:///DiscussionsRepository.php" />
+        <option value="file:///EloquentDiscussions.php" />
+        <option value="file:///activity-points-details.blade.php" />
+        <option value="file:///redeem-points-details.blade.php" />
+        <option value="file:///view-activity-details-page.blade.php" />
+        <option value="file:///add-discussions.blade.php" />
+        <option value="file:///detail-discussions.blade.php" />
+        <option value="file:///edit-discussions.blade.php" />
+        <option value="file:///left-side-discussions.blade.php" />
+        <option value="file:///list-discussions.blade.php" />
+        <option value="file:///AbuseTest.php" />
+        <option value="file:///AddDiscussionTest.php" />
+        <option value="file:///DiscussionCommentTest.php" />
+        <option value="file:///LikeablesTest.php" />
+        <option value="file:///DiscussionTest.php" />
+      </list>
+    </option>
     <option name="frameInfo">
       <frame x="1976" y="102" width="1400" height="784" extendedState="6" />
     </option>
