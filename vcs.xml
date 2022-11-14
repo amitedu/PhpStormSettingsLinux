@@ -6,6 +6,10 @@
           <option name="url" value="http://gitlab.com" />
           <option name="userName" value="amit.das@focalworks.in" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://gitlab.trualta.com" />
+          <option name="userName" value="amit.das@focalworks.in" />
+        </UrlAndUserName>
       </list>
     </option>
   </component>
