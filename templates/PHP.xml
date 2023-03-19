@@ -44,4 +44,10 @@
     </context>
   </template>
   <template name="openEdit" value="phpstorm $(git diff --name-only master...&lt;the_branch_name&gt;)" description="Open all edited files to phpstorm" toReformat="false" toShortenFQNames="true" />
+  <template name="test" value="/** @test */&#10;public function $NAME$(): void&#10;{&#10;    $END$&#10;}" description="test template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="name" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
